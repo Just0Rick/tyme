@@ -1,6 +1,10 @@
 {
   "name": "tyme-app",
   "version": "0.0.0",
+  "author": {
+    "name": "Ricardo José Guevara Aragón",
+    "email": "ttwrick@gmail.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -34,5 +38,6 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.7.2"
-  }
+  },
+  "license": "MIT"
 }
