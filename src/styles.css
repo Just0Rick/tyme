@@ -1,5 +1,28 @@
+:root{
+    --color-rich-black: #101820;
+    --color-onyx: #424242;
+    --color-eerie-black: #222222;
+    --color-celestial-blue: #2892D7;
+    --color-timberwolf: #DAD9D7;
+    --color-platinum: #E6E2E7;
+    --color-white: #FFF;
+
+    --font-color-primary: var(--color-onyx);
+    --font-color-secondary: var(--color-white);
+}
+
 html{
     font-size: 16px;
+}
+
+html, h1, h2, h3, h4, h5, h6, span, p, div, label, a, li{
+    color: var(--font-color-primary);
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 @media (max-width: 768px){

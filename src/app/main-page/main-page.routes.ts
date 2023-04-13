@@ -6,6 +6,11 @@ const routes: Route[] =[
     {
         path: '',
         component: IndexComponent
+    },
+    {
+        path: 'index',
+        redirectTo: '',
+        pathMatch: 'full'
     }
 ];
 
