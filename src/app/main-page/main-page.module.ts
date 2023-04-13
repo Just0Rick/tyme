@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IndexComponent } from './index/index.component';
+import { MainPageRouterModule } from './main-page.routes';
 
 
 
@@ -9,7 +10,8 @@ import { IndexComponent } from './index/index.component';
     IndexComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MainPageRouterModule
   ]
 })
 export class MainPageModule { }
