@@ -1,0 +1,32 @@
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+}
+
+.header-menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-content .middle-section{
+    display: flex;
+    justify-content: center;
+}
+
+    .header-content .middle-section li a{
+        text-transform: uppercase;
+    }
+
+.header-content .right-section{
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .header-content .right-section li a{
+        text-transform: uppercase;
+    }

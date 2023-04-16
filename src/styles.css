@@ -7,6 +7,7 @@ IMPORTS
     --color-rich-black: #101820;
     --color-onyx: #424242;
     --color-eerie-black: #222222;
+    --color-jet: #333333;
     --color-celestial-blue: #2892D7;
     --color-timberwolf: #DAD9D7;
     --color-platinum: #E6E2E7;
@@ -23,6 +24,15 @@ html{
 html, h1, h2, h3, h4, h5, h6, span, p, div, label, a, li{
     color: var(--font-color-primary);
     font-family: 'Rubik';
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: var(--color-celestial-blue);
 }
 
 ul, ol {
