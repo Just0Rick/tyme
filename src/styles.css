@@ -41,6 +41,11 @@ ul, ol {
     margin: 0;
 }
 
+.logo{
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 @media (max-width: 768px){
     html{
         font-size: 14px;
