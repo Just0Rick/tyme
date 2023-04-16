@@ -1,0 +1,50 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.banner-section{
+    height: 45.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--color-timberwolf);
+}
+
+.banner-section .text{
+    text-align: center;
+}
+
+.banner-section .image{
+    --size-wh: 20.25rem;
+    width: var(--size-wh);
+    height: var(--size-wh);
+}
+
+.service-section{
+    height: 33.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .service-section .content{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+.message-section{
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-rich-black);
+}
+
+    .message-section h1{
+        color: var(--font-color-secondary);
+        text-align: center;
+    }

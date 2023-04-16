@@ -46,6 +46,11 @@ ul, ol {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.global-gutter{
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
 @media (max-width: 768px){
     html{
         font-size: 14px;
