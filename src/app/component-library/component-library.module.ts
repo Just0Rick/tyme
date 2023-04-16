@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServiceItemComponent } from './service-item/service-item.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -12,7 +13,8 @@ import { ServiceItemComponent } from './service-item/service-item.component';
     ServiceItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FontAwesomeModule
   ]
 })
 export class ComponentLibraryModule { }

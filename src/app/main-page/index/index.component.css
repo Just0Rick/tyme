@@ -27,13 +27,15 @@
     height: 33.25rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 5rem;
 }
 
     .service-section .content{
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        height: 100%;
     }
 
 .message-section{

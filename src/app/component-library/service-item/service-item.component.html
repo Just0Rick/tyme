@@ -1,1 +1,11 @@
-<p>service-item works!</p>
+<div class="outer-container">
+    <fa-icon [icon]="icn" class="top-icon"></fa-icon>
+    <span class="title">{{title}}</span>
+    <hr class="separator" />
+    <p class="content">
+        {{content}}
+    </p>
+    <button class="btn btn-light" (click)="onClick($event)">
+        {{actionText}}
+    </button>
+</div>

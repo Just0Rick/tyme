@@ -14,10 +14,14 @@
     </article>
     <article class="service-section global-gutter">
         <section class="title text-center">
-            <h2>Servicios</h2>
+            <h1>Servicios</h1>
         </section>
         <section class="content">
-            <app-service-item *ngFor="let item of [0, 1, 2]"></app-service-item>
+            <app-service-item *ngFor="let item of services"
+                [icon]="item.icn"
+                [title]="item.title"
+                [content]="item.content"
+                (cta)="onServicePressed(item)"></app-service-item>
         </section>
     </article>
     <article class="message-section global-gutter">
