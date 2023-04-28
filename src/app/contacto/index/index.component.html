@@ -5,7 +5,7 @@
         </h1>
     </article>
     <article class="contact-items">
-        <app-card-contact [icon]="iconPhone" item-id="wp" text="+505 8872 9722" (onClick)="onClicked($event)"></app-card-contact>
-        <app-card-contact [icon]="iconMail" item-id="mail" text="example@mail.com" (onClick)="onClicked($event)"></app-card-contact>
+        <app-card-contact [icon]="iconPhone" item-id="wp" [text]="globals.contactPhone" (onClick)="onClicked($event)"></app-card-contact>
+        <app-card-contact [icon]="iconMail" item-id="mail" [text]="globals.contactMail" (onClick)="onClicked($event)"></app-card-contact>
     </article>
 </main>

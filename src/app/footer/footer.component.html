@@ -23,11 +23,15 @@ desarrolladores de software y veteranos de la industria de publicación trabajan
                         </li>
                         <li>
                             <fa-icon [icon]="iPhone"></fa-icon>
-                            <span class="ms-2">(505) 0000 0000</span>
+                            <a class="ms-2" href="https://wa.me/{{globals.contactPhoneNoSpace}}" target="_blank">
+                                {{globals.contactPhone}}
+                            </a>
                         </li>
                         <li>
                             <fa-icon [icon]="iMail"></fa-icon>
-                            <span class="ms-2">support@sample.com</span>
+                            <a class="ms-2" href="mailto:{{globals.contactMail}}" target="_blank">
+                                {{globals.contactMail}}
+                            </a>
                         </li>
                     </ul>
                 </div>

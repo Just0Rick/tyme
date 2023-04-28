@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { IconDefinition, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { CardContactModel } from 'src/app/component-library/card-contact/card-contact.component';
+import { GlobalsService } from 'src/app/globals.service';
 
 @Component({
   selector: 'app-contacto-index',
@@ -13,19 +14,19 @@ export class IndexComponent implements OnInit {
   public iconPhone: IconDefinition = faWhatsapp;
   public iconMail: IconDefinition = faEnvelope;
 
-  constructor() { }
+  constructor(public globals: GlobalsService) {
+   }
 
   ngOnInit(): void {
   }
 
   onClicked(content: CardContactModel){
-    let format = "https://wa.me/";
+    let format = "https://wa.me/" + this.globals.contactPhoneNoSpace;
     if(content.cardId == "mail"){
-      format = "mailto:";
+      format = "mailto:" + this.globals.contactMail;
     }
-    const formres = `${format}${content.cardText.replace(/\s/g, '')}`;
-    console.log(formres);
-    window.open(formres, "_blank");
+    
+    window.open(format, "_blank");
   }
 
 }

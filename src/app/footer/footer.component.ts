@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faHome, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { GlobalsService } from '../globals.service';
 
 @Component({
   selector: 'app-footer',
@@ -16,7 +17,7 @@ export class FooterComponent implements OnInit {
   public iPhone = faPhone;
   public iMail = faEnvelope;
 
-  constructor() { }
+  constructor(public globals: GlobalsService) { }
 
   ngOnInit(): void {
   }
