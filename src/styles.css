@@ -51,6 +51,22 @@ ul, ol {
     padding-right: 8rem;
 }
 
+/*
+    -----
+    OVERWRITE
+    -----
+*/
+
+.btn.btn-primary{
+    background-color: var(--color-celestial-blue);
+    border-color: var(--color-celestial-blue);
+}
+
+.btn.btn-primary:hover{
+    background-color: #2892D7CC;
+    border-color: #2892D7CC;
+}
+
 @media (max-width: 768px){
     html{
         font-size: 14px;

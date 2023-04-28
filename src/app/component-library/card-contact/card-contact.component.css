@@ -1,0 +1,27 @@
+.card-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    width: 25rem;
+    height: 15rem;
+    transform: scale(1);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0px var(--color-onyx);
+    transition-property: box-shadow, transform;
+    transition-duration: 0.25s;
+}
+
+.card-contact:hover{
+    box-shadow: 0 0 10px 0 var(--color-onyx);
+    transform: scale(1.1);
+}
+
+.icn-section{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

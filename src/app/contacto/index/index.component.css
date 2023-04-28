@@ -5,3 +5,8 @@
     gap: 3rem;
     min-height: 60vh;
 }
+
+.contact-items{
+    display: flex;
+    justify-content: space-around;
+}
