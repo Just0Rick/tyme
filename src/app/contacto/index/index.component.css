@@ -1,0 +1,12 @@
+#main{
+    padding: 8rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    min-height: 60vh;
+}
+
+.contact-items{
+    display: flex;
+    justify-content: space-around;
+}

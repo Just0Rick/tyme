@@ -34,3 +34,20 @@
     flex-direction: column;
     gap: 0.75rem;
 }
+
+@media (max-width: 768px) {
+    .upper-footer-container,
+    .lower-footer-container{
+        padding: 2rem 2rem;
+    }
+
+    .socials-list{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .lower-footer-container > .row > .col-12.col-lg-8 {
+        text-align: center;
+    }
+}

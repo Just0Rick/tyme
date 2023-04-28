@@ -1,0 +1,11 @@
+<main id="main">
+    <article class="text-center">
+        <h1>
+            Contáctenos
+        </h1>
+    </article>
+    <article class="contact-items">
+        <app-card-contact [icon]="iconPhone" item-id="wp" [text]="globals.contactPhone" (onClick)="onClicked($event)"></app-card-contact>
+        <app-card-contact [icon]="iconMail" item-id="mail" [text]="globals.contactMail" (onClick)="onClicked($event)"></app-card-contact>
+    </article>
+</main>

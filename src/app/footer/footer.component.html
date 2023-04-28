@@ -3,7 +3,7 @@
         <div class="container-fluid upper-footer-container">
             <div class="row">
                 <div class="col-12">
-                    <h1>LOGO</h1>
+                    <img src="assets/img/ailogo_full.png" alt="Logo principal">
                 </div>
             </div>
             <div class="row">
@@ -23,11 +23,15 @@ desarrolladores de software y veteranos de la industria de publicación trabajan
                         </li>
                         <li>
                             <fa-icon [icon]="iPhone"></fa-icon>
-                            <span class="ms-2">(505) 0000 0000</span>
+                            <a class="ms-2" href="https://wa.me/{{globals.contactPhoneNoSpace}}" target="_blank">
+                                {{globals.contactPhone}}
+                            </a>
                         </li>
                         <li>
                             <fa-icon [icon]="iMail"></fa-icon>
-                            <span class="ms-2">support@sample.com</span>
+                            <a class="ms-2" href="mailto:{{globals.contactMail}}" target="_blank">
+                                {{globals.contactMail}}
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +46,7 @@ desarrolladores de software y veteranos de la industria de publicación trabajan
                 </div>
                 <div class="col-12 col-lg-4">
                     <ul class="socials-list">
-                        <li>
+                        <!-- <li>
                             <a href="#">
                                 <fa-icon [icon]="finsta"></fa-icon>
                             </a>
@@ -56,7 +60,7 @@ desarrolladores de software y veteranos de la industria de publicación trabajan
                             <a href="#">
                                 <fa-icon [icon]="fface"></fa-icon>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>

@@ -1,11 +1,11 @@
 <div class="outer-container">
-    <fa-icon [icon]="icn" class="top-icon"></fa-icon>
+    <fa-icon [icon]="icn" class="top-icon" [styles]="{ color: currentIcnColor }"></fa-icon>
     <span class="title">{{title}}</span>
     <hr class="separator" />
     <p class="content">
         {{content}}
     </p>
-    <button class="btn btn-light" (click)="onClick($event)">
+    <button class="btn btn-primary w-75 mx-3" (click)="onClick($event)">
         {{actionText}}
     </button>
 </div>

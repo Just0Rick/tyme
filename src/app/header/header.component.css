@@ -6,8 +6,8 @@
 }
 
 .header-content{
+    position: relative;
     display: flex;
-    justify-content: space-between;
     padding: 0 8rem;
     width: 100%;
 }
@@ -21,9 +21,16 @@
     gap: 1rem;
 }
 
+.header-content .left-section{
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 33.3%;
+}
+
 .header-content .middle-section{
     display: flex;
     justify-content: center;
+    flex-basis: 33.3%;
 }
 
     .header-content .middle-section li a{
