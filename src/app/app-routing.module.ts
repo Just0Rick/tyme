@@ -13,6 +13,11 @@ const routes: Routes = [
     loadChildren: () => import('./contacto/contacto.module').then(m => m.ContactoModule),
     data: { title: 'Contacto' }
   },
+  {
+    path: 'acercade',
+    loadChildren: () => import('./acercade/acercade.module').then(m => m.AcercadeModule),
+    data: { title: 'Nosotros' }
+  },
 
   { path: '**', component: NotFoundComponent }
 ];

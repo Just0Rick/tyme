@@ -1,14 +1,11 @@
 <main id="main">
     <article class="text-center">
-        <h1>Acerca de A&I</h1>
-    </article>
-    <article>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        </p>
+        <h1>
+            Contáctenos
+        </h1>
     </article>
     <article class="contact-items">
-        <app-card-contact [icon]="iconPhone"></app-card-contact>
-        <app-card-contact [icon]="iconMail" text="example@mail.com"></app-card-contact>
+        <app-card-contact [icon]="iconPhone" item-id="wp" text="+505 8872 9722" (onClick)="onClicked($event)"></app-card-contact>
+        <app-card-contact [icon]="iconMail" item-id="mail" text="example@mail.com" (onClick)="onClicked($event)"></app-card-contact>
     </article>
 </main>
