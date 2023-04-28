@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, OnInit, Output } from '@angular/core';
 import { IconDefinition, faThLarge } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -12,6 +12,14 @@ export class ServiceItemComponent implements OnInit {
   @Input('icon')
   public icn: IconDefinition = faThLarge;
 
+  @Input('icon-accent')
+  public accentIcnColor: string = "var(--color-celestial-blue)";
+
+  @Input('icon-color')
+  public currentIcnColor: string = "var(--color-onyx)";
+
+  public bckpColor: string = "";
+
   @Input()
   public title: string = "Corrección";
 
@@ -24,9 +32,21 @@ export class ServiceItemComponent implements OnInit {
   @Output()
   public cta: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
 
+
+  @HostListener("mouseover")
+  onMouseOver(){
+    this.currentIcnColor = this.accentIcnColor;
+  }
+
+  @HostListener("mouseleave")
+  onMouseLeave(){
+    this.currentIcnColor = this.bckpColor;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
+    this.bckpColor = this.currentIcnColor;
   }
 
   onClick(evt: MouseEvent){

@@ -8,6 +8,11 @@ const routes: Routes = [
     loadChildren: () => import('./main-page/main-page.module').then(m => m.MainPageModule),
     data: { title: 'Index' }
   },
+  {
+    path: 'contacto',
+    loadChildren: () => import('./contacto/contacto.module').then(m => m.ContactoModule),
+    data: { title: 'Contacto' }
+  },
 
   { path: '**', component: NotFoundComponent }
 ];
