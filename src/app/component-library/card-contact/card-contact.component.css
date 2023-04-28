@@ -20,8 +20,13 @@
 }
 
 .icn-section{
-    font-size: 3rem;
+    font-size: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.data-section{
+    overflow: hidden;
+    font-size: 1.25rem;
 }

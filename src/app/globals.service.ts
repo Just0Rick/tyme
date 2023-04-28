@@ -9,8 +9,8 @@ export class GlobalsService {
   public contactMail: string;
 
   constructor() { 
-    this.contactPhone = "+505 8872 9722";
-    this.contactMail = "example@gmail.com";
+    this.contactPhone = "+505 7736 0257";
+    this.contactMail = "asesoresdeinvestofic@gmail.com";
   }
 
   get contactPhoneNoSpace(){
