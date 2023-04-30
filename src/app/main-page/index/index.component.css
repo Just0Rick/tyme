@@ -86,6 +86,14 @@
         width: 100%;
     }
 
+    .banner-section .text h4{
+        padding-right: 0;
+    }
+
+    .banner-section{
+        min-height: 25.25rem;
+    }
+
     .service-section .content{
         display: flex;
         flex-direction: column;

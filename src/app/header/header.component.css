@@ -82,3 +82,12 @@
     .header-content .right-section li a{
         text-transform: uppercase;
     }
+
+@media (max-width: 992px){
+    .header-content{
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1.5rem 2rem 1.5rem;
+        gap: 2rem;
+    }
+}

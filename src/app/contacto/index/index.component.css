@@ -1,5 +1,6 @@
 #main{
-    padding: 8rem 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -9,4 +10,12 @@
 .contact-items{
     display: flex;
     justify-content: space-around;
+}
+
+@media (max-width: 992px){
+    .contact-items{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 }

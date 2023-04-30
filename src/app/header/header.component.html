@@ -18,9 +18,9 @@
                 <li>
                     <a routerLink="/servicios">
                         Servicios
-                        <fa-icon [icon]="icnMore"></fa-icon>
+                        <fa-icon [icon]="icnMore" class="vistaweb"></fa-icon>
                     </a>
-                    <ul class="submenu">
+                    <ul class="submenu vistaweb">
                         <li *ngFor="let smItem of submenu; let i = index" (click)="onServiceClick(smItem.id)">
                             {{smItem.title}}
                         </li>
