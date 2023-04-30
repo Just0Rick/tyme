@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.css']
 })
-export class IndexComponent implements OnInit {
+export class IndexComponent implements OnInit, AfterViewInit {
   public serviceItems = [
     {
       serviceName: "Asesorías",
@@ -160,6 +160,15 @@ export class IndexComponent implements OnInit {
 
   ngOnInit(): void {
     
+  }
+
+  ngAfterViewInit(): void {
+    this.activatedRoute.queryParams.subscribe(({serviceId}) => {
+      console.log(serviceId);
+      let ele = document.querySelector(`#serItem_${serviceId}`);
+      console.log(ele);
+      ele?.scrollIntoView();
+    })
   }
 
   onElementClick(element: HTMLElement){
