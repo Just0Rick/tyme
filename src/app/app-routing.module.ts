@@ -18,6 +18,11 @@ const routes: Routes = [
     loadChildren: () => import('./acercade/acercade.module').then(m => m.AcercadeModule),
     data: { title: 'Nosotros' }
   },
+  {
+    path: 'servicios',
+    loadChildren: () => import('./detalle-servicio/detalle-servicio.module').then(m => m.DetalleServicioModule),
+    data: { title: 'Servicio' }
+  },
 
   { path: '**', component: NotFoundComponent }
 ];

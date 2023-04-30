@@ -1,0 +1,35 @@
+<article class="service-item" id="serItem_{{itemId}}">
+    <section>
+        <h2>
+            {{serviceName}}
+        </h2>
+    </section>
+    <section *ngIf="serviceTitle">
+        <h3 class="text-center">
+            {{serviceTitle}}
+        </h3>
+    </section>
+    <section>
+        <p *ngFor="let descriptor of serviceDescriptors">
+            {{descriptor}}
+        </p>
+    </section>
+    <section *ngIf="serviceTiers.length > 0">
+        <ul class="tier-parent">
+            <li class="tier" *ngFor="let tier of serviceTiers">
+                <span class="tier-name">{{tier.tierName}}</span>
+                <b class="tier-price" *ngIf="tier.tierPrice > 0"> (${{tier.tierPrice}})</b>
+                <ul class="tier-features">
+                    <li *ngFor="let feature of tier.tierDetails">
+                        <fa-icon [icon]="icnCheck"></fa-icon> {{feature}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section class="py-3 w-100 text-center">
+        <button class="btn btn-primary px-5" (click)="onClick()">
+            Seguir
+        </button>
+    </section>
+</article>

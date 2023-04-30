@@ -18,7 +18,13 @@
                 <li>
                     <a href="">
                         Servicios
+                        <fa-icon [icon]="icnMore"></fa-icon>
                     </a>
+                    <ul class="submenu">
+                        <li *ngFor="let smItem of submenu; let i = index" (click)="onServiceClick(smItem.id)">
+                            {{smItem.title}}
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a routerLink="contacto">

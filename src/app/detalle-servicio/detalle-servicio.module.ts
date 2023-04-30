@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IndexComponent } from './index/index.component';
+import { DetalleServicioRouterModule } from './detalle-servicio.routes';
 import { ComponentLibraryModule } from '../component-library/component-library.module';
-import { ContactoRouterModule } from './contacto.routes';
+import { ContactoModule } from '../contacto/contacto.module';
 
 
 
@@ -10,13 +11,11 @@ import { ContactoRouterModule } from './contacto.routes';
   declarations: [
     IndexComponent
   ],
-  exports: [
-    IndexComponent
-  ],
   imports: [
     CommonModule,
-    ContactoRouterModule,
-    ComponentLibraryModule
+    DetalleServicioRouterModule,
+    ComponentLibraryModule,
+    ContactoModule
   ]
 })
-export class ContactoModule { }
+export class DetalleServicioModule { }

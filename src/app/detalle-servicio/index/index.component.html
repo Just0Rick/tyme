@@ -1,0 +1,18 @@
+<main id="main">
+    <article>
+        <h1>
+            Servicios de A&amp;I
+        </h1>
+    </article>
+    <app-service-detail 
+        *ngFor="let serItem of serviceItems; let i = index"
+        [item-id]="i+1"
+        [service-name]="serItem.serviceName"
+        [service-title]="serItem.serviceTitle"
+        [service-descriptors]="serItem.serviceDescriptors"
+        [service-tiers]="serItem.serviceTiers"
+        (cta)="onElementClick(comunicarse)"></app-service-detail>
+    <article #comunicarse>
+        <app-contacto-index></app-contacto-index>
+    </article>
+</main>

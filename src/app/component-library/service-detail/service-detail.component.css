@@ -1,0 +1,22 @@
+.tier-parent{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tier-parent .tier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tier-parent .tier-name{
+    font-weight: bold;
+}
+
+.tier-features{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
