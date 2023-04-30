@@ -5,9 +5,9 @@
         </h2>
     </section>
     <section *ngIf="serviceTitle">
-        <h3 class="text-center">
+        <h4>
             {{serviceTitle}}
-        </h3>
+        </h4>
     </section>
     <section>
         <p *ngFor="let descriptor of serviceDescriptors">
@@ -18,8 +18,8 @@
         <ul class="tier-parent">
             <li class="tier" *ngFor="let tier of serviceTiers">
                 <div class="tier-header">
-                    <span class="tier-name">{{tier.tierName}}</span>
-                    <b class="tier-price" *ngIf="tier.tierPrice > 0"> (${{tier.tierPrice}})</b>
+                    <h4 class="tier-name">{{tier.tierName}}</h4>
+                    <!-- <b class="tier-price" *ngIf="tier.tierPrice > 0"> (${{tier.tierPrice}})</b> -->
                 </div>
                 <ul class="tier-features">
                     <li *ngFor="let feature of tier.tierDetails">

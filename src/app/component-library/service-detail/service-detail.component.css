@@ -15,7 +15,7 @@
 }
 
 .tier-parent .tier-name{
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 .tier-features{
