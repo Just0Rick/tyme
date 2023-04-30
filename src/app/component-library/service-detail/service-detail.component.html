@@ -17,8 +17,10 @@
     <section *ngIf="serviceTiers.length > 0">
         <ul class="tier-parent">
             <li class="tier" *ngFor="let tier of serviceTiers">
-                <span class="tier-name">{{tier.tierName}}</span>
-                <b class="tier-price" *ngIf="tier.tierPrice > 0"> (${{tier.tierPrice}})</b>
+                <div class="tier-header">
+                    <span class="tier-name">{{tier.tierName}}</span>
+                    <b class="tier-price" *ngIf="tier.tierPrice > 0"> (${{tier.tierPrice}})</b>
+                </div>
                 <ul class="tier-features">
                     <li *ngFor="let feature of tier.tierDetails">
                         <fa-icon [icon]="icnCheck"></fa-icon> {{feature}}

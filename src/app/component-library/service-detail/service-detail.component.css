@@ -1,12 +1,16 @@
 .tier-parent{
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .tier-parent .tier{
     display: flex;
     flex-direction: column;
+    flex-basis: 32%;
     align-items: center;
 }
 
@@ -16,7 +20,11 @@
 
 .tier-features{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
     gap: 1rem;
+    padding: 1rem;
+    /* box-shadow: 1px 1px 1rem 0 rgb(0 0 0/16%); */
 }
