@@ -19,11 +19,11 @@
             <h1>Servicios</h1>
         </section>
         <section class="content">
-            <app-service-item *ngFor="let item of services"
+            <app-service-item *ngFor="let item of services; let i = index"
                 [icon]="item.icn"
                 [title]="item.title"
                 [content]="item.content"
-                (cta)="onServicePressed(item)"></app-service-item>
+                (cta)="onServicePressed((i+1))"></app-service-item>
         </section>
     </article>
     <article class="message-section global-gutter">

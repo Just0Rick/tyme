@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { IconDefinition, faGlobeAmericas, faGraduationCap, faPenNib, faSearch, faThLarge, faUserFriends } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -36,13 +37,13 @@ export class IndexComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
 
-  onServicePressed(service: ServicesModel){
-    alert(`${service.title} presionado!`);
+  onServicePressed(serviceId : number){
+    this.router.navigate(['servicios'], { relativeTo: this.activatedRoute, queryParams: { serviceId }});
   }
 
 }
